@@ -17,7 +17,7 @@ const Header = () => {
             />
           </a>
         </h1>
-        <div className="relative md:justify-self-center">
+        <div className="relative md:justify-self-center justify-end">
           <button
             className="menu-btn"
             onClick={() => SetNavOpen((prev) => !prev)}
@@ -28,7 +28,7 @@ const Header = () => {
           </button>
           <Navbar navOpen={navOpen} />
         </div>
-        <a href="#contact" className="btn btn-secondary max-md:hidden">
+        <a href="#contact" className="btn btn-secondary hidden md:flex">
           Contacto
         </a>
       </div>
