@@ -27,11 +27,11 @@ export const Navbar = ({ navOpen }) => {
   };
 
   const navItems = [
-    { label: "Home", link: "#home", className: "nav-link active" },
-    { label: "About", link: "#about", className: "nav-link" },
-    { label: "Work", link: "#work", className: "nav-link" },
-    { label: "Reviews", link: "#reviews", className: "nav-link" },
-    { label: "Contact", link: "#contact", className: clsx("md:!hidden", "nav-link")},
+    { label: "Inicio", link: "#home", className: "nav-link active" },
+    { label: "Sobre mi", link: "#about", className: "nav-link" },
+    { label: "Proyectos", link: "#work", className: "nav-link" },
+    { label: "Comentarios", link: "#reviews", className: "nav-link" },
+    { label: "Contacto", link: "#contact", className: clsx("md:!hidden", "nav-link")},
   ];
   return (
     <nav className={`navbar ${navOpen ? "active" : ""}`}>
