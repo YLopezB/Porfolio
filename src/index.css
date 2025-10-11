@@ -34,9 +34,48 @@ body {
 }
 
 .btn {
-    @apply max-w-max h-9 gap-2 px-4 md:flex items-center rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color] hidden
+    @apply max-w-max h-9 gap-2 px-4 flex items-center rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 ring-inset transition-[background-color]
 }
 
 .btn-secondary {
     @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+}
+
+.material-symbols-rounded {
+    @apply w-[1em] h-[1em] overflow-hidden
+}
+
+.container {
+    @apply px-4 mx-auto lg:px-8 xl:max-w-6xl
+}
+
+.img-box {
+    @apply bg-zinc-700 overflow-hidden
+}
+
+.img-cover {
+    @apply w-full h-full object-cover
+}
+
+.headLine-1 {
+    @apply bg-gradient-to-t from-[#ff0000] to-[#ffffff] h-64 w-full bg-clip-text text-transparent
+}
+.headLine-1 {
+    @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.5]
+}
+
+.btn .material-symbols-rounded {
+    @apply text-[18px]
+}
+
+.btn:has(.material-symbols-rounded)  {
+    @apply pr-3
+}
+
+.btn-primary {
+    @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400 hover:cursor-pointer
+}
+
+.btn-outline {
+    @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800 hover:cursor-pointer
 }
