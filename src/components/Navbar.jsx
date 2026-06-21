@@ -28,9 +28,8 @@ export const Navbar = ({ navOpen }) => {
 
   const navItems = [
     { label: "Inicio", link: "#home", className: "nav-link active" },
-    { label: "Sobre mi", link: "#about", className: "nav-link" },
     { label: "Proyectos", link: "#work", className: "nav-link" },
-    { label: "Comentarios", link: "#reviews", className: "nav-link" },
+    { label: "Skills", link: "#skills", className: "nav-link" },
     { label: "Contacto", link: "#contact", className: clsx("md:!hidden", "nav-link")},
   ];
   return (

@@ -3,23 +3,23 @@ import { Button } from "./Button";
 export default function Footer() {
   const sitemap = [
     {
-      label: "Home",
+      label: "Inicio",
       href: "#home",
     },
     {
-      label: "About",
+      label: "Sobre mí",
       href: "#about",
     },
     {
-      label: "Work",
+      label: "Proyectos",
       href: "#work",
     },
     {
-      label: "Reviews",
+      label: "Comentarios",
       href: "#reviews",
     },
     {
-      label: "Contact me",
+      label: "Contacto",
       href: "#contact",
     },
   ];
@@ -27,13 +27,13 @@ export default function Footer() {
   const socials = [
     {
       label: "GitHub",
-      href: "https://www.github.com/codewithsadee-org",
+      href: "https://github.com/YLopezB",
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/codewithsadee",
-    },
-    {
+      href: "https://www.linkedin.com/in/yeison-lopez-2132a2410",
+    }
+    /*{
       label: "Twitter X",
       href: "https://x.com/codewithsadee_",
     },
@@ -44,18 +44,18 @@ export default function Footer() {
     {
       label: "CodePen",
       href: "https://codepen.io/codewithsadee",
-    },
+    },*/
   ];
   return (
     <footer className="section flex items-center z-40 bg-gradient-to-b from-zinc-900/50 to-red-800/50 justify-center">
       <div className="container pt-20 ">
         <div className="lg:grid lg:grid-cols-2">
-          <div className="mb-10">
+          <div className="">
             <h2 className="headLine-1 mb-8 lg:max-w-[12ch] ">
               Trabajemos Juntos!
             </h2>
             <Button
-              href="mailto:andislopez13@gmail.com"
+              href="mailto:contacto@yeisonlopez.dev"
               label="Empecemos un proyecto"
               icon="chevron_right"
               classes="btn-primary"
@@ -95,12 +95,21 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between pt-10 pb-5">
-          <a href="" className="">
-            <img src="/images/favicon.ico" width={40} height={40} alt="Logo" />
+        <div className="flex flex-col items-center justify-between pt-10 pb-5">
+          <a href="" className="flex items-center gap-3">
+            <img src="/images/logoYL.png" width={60} height={60} alt="Logo" />
+            <div className="hidden sm:flex flex-col leading-none">
+              <span className="text-xl md:text-2xl font-bold tracking-wide">
+                <span className="text-white">YEISON</span>{" "}
+                <span className="text-[#E53935]">LÓPEZ</span>
+              </span>
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-zinc-300 mt-1">
+                Software Engineer
+              </span>
+            </div>
           </a>
-          <p className="text-zinc-500 text-sm" >
-            &copy; 2025 <span className="text-zinc-200">Yeison Lopez</span>
+          <p className="text-zinc-500 text-sm">
+            &copy; 2026 <span className="text-zinc-200">Yeison Lopez</span>
           </p>
         </div>
       </div>

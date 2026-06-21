@@ -57,8 +57,8 @@ body {
     @apply w-full h-full object-cover
 }
 
-.headLine-1, .headline-2 {
-    @apply bg-gradient-to-t from-[#ff0000] to-[#ffffff] w-full bg-clip-text text-transparent
+.headLine-1, .headline-2, .headline-3 {
+    @apply bg-gradient-to-t from-[#ff0000] to-[#ffffff] bg-clip-text text-transparent
 }
 
 .headLine-1 {
@@ -68,6 +68,8 @@ body {
 .headline-2 {
     @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
 }
+
+
 
 .btn .material-symbols-rounded {
     @apply text-[18px]

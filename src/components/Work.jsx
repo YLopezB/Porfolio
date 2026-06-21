@@ -2,48 +2,66 @@ import ProjectCard from "./ProjectCard";
 export default function Work() {
   const works = [
     {
-      imgSrc: "https://img.freepik.com/vector-premium/plantilla-web-gestion-proyectos_93487-539.jpg?w=2000",
-      title: "Full stack music app",
-      tags: ["API", "MVC", "Development"],
-      projectLink: "https://musify-5al0.onrender.com/",
+      imgSrc: "/images/shoplist.png",
+      title: "ShopList Hub",
+      tags: ["Next", "Express", "MongoDB", "JWT", "Node.js", "API"],
+      projectLink: "https://shoplisthub.yeisonlopez.dev/",
     },
     {
-      imgSrc: "https://as1.ftcdn.net/v2/jpg/02/63/59/42/1000_F_263594298_RlMBBQYDcg1NeVn6zinSyYuZgZ1H6BsN.jpg",
-      title: "Free stock photo app",
-      tags: ["API", "SPA"],
-      projectLink: "https://pixstock-official.vercel.app/",
+      imgSrc: "/images/myitinerary.png",
+      title: "My Tinerary",
+      tags: ["React", "Express", "MongoDB", "JWT", "Node.js", "API", "TailwinCSS"],
+      projectLink: "https://mytinerary.yeisonlopez.dev",
     },
     {
-      imgSrc: "https://st.depositphotos.com/2236871/4874/v/950/depositphotos_48741353-stock-illustration-website-template-design.jpg",
-      title: "Recipe app",
-      tags: ["Development", "API"],
-      projectLink: "",
+      imgSrc: "/images/Api-Innovapyme.png",
+      title: "Backend Api InnovaPyme",
+      tags: ["Express", "Prisma ORM", "MySQL", "JWT", "Swagger", "API"],
+      projectLink: "https://api-innovapyme.up.railway.app/docs",
     },
     {
-      imgSrc: "https://images01.nicepagecdn.com/page/27/49/es/creador-de-sitios-web-preview-2749463.jpg",
-      title: "Real state website",
-      tags: ["Web-design", "Development"],
-      projectLink: "https://github.com/codewithsadee-org/wealthome",
+      imgSrc: "/images/comics.png",
+      title: "COMICS",
+      tags: ["React", "Node.js", "TailwinCSS"],
+      projectLink: "https://comics.yeisonlopez.dev",
     },
     {
-      imgSrc: "https://mir-s3-cdn-cf.behance.net/projects/404/90acb567314179.Y3JvcCwxMzY2LDEwNjgsMCww.png",
-      title: "eCommerce website",
-      tags: ["eCommerce", "Development"],
-      projectLink: "https://github.com/codewithsadee/anon-ecommerce-website",
+      imgSrc: "/images/ecomerce.png",
+      title: "E-comerce: Yeison's shop",
+      tags: ["HTML", "CSS", "JS", "LocalStorage", "bootstrap"],
+      projectLink: "https://ylopezb.github.io/Ecomerce/",
     },
     {
-      imgSrc: "https://www.zohowebstatic.com/sites/default/files/projects/templates_0.png",
-      title: "vCard Personal portfolio",
-      tags: ["Web-design", "Development"],
-      projectLink: "https://github.com/codewithsadee/vcard-personal-portfolio",
+      imgSrc: "/images/amazingevents.png",
+      title: "Amazing Events",
+      tags: ["HTML", "CSS", "JS", "Bootstrap"],
+      projectLink: "https://ylopezb.github.io/AmazingEventsYeisonLopez",
+    },
+        {
+      imgSrc: "/images/tablerokanban.png",
+      title: "Tablero Kanban",
+      tags: ["HTML", "CSS", "JS", "drop"],
+      projectLink: "https://ylopezb.github.io/TABLERO-KANBAN",
+    },
+    {
+      imgSrc: "/images/gastos.png",
+      title: "Manejador de cuentas",
+      tags: ["HTML", "CSS", "JS"],
+      projectLink: "https://ylopezb.github.io/MANEJO-DE-GASTOS",
+    },
+    {
+      imgSrc: "/images/paletacolores.png",
+      title: "Generador paleta colores",
+      tags: ["HTML", "CSS", "JS"],
+      projectLink: "https://ylopezb.github.io/Generador-de-paleta-de-colores",
     },
   ];
   return (
     <section id="work" className="section pt-20">
       <div className="container">
-        <h2 className="headline-2 mb-8 reveal--x">Mi portafolio</h2 >
+        <h2 className="headline-2 mb-8 reveal--x">Mis proyectos</h2>
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))]">
-          {works.map(({imgSrc, title, tags, projectLink}, key) => (
+          {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
               imgSrc={imgSrc}

@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -21,40 +20,38 @@ export const App = () => {
         scrollTrigger: {
           trigger: element,
           start: "100 bottom",
-          scrub: true
+          scrub: true,
         },
         x: 0,
         opacity: 1,
         duration: 2,
         ease: "power2.out",
-      })
-    })
+      });
+    });
   });
-    useGSAP(() => {
+  useGSAP(() => {
     const elements = gsap.utils.toArray(".reveal--x");
     elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
           start: "100 bottom",
-          scrub: true
+          scrub: true,
         },
         x: 0,
         opacity: 1,
         duration: 2,
         ease: "power2.out",
-      })
-    })
-  })
+      });
+    });
+  });
   return (
     <ReactLenis root>
       <Header />
       <main>
         <Hero />
-        <About />
-        <Skill />
         <Work />
-        <Review />
+        <Skill />
         <Contact />
         <Footer />
       </main>
